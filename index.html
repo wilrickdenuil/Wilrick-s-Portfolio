@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+    <title>Wilrick den Uil | Full Stack Web Developer</title>
+    <meta name="description" content="Portfolio van Wilrick den Uil, full stack web developer uit Nederland. Gespecialiseerd in HTML, CSS en Bootstrap." />
+    <meta name="author" content="Wilrick den Uil" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://wilrickdenuil.github.io/Wilrick-s-Portfolio/" />
+  
+    <meta property="og:type"        content="website" />
+    <meta property="og:url"         content="https://wilrickdenuil.github.io/Wilrick-s-Portfolio/" />
+    <meta property="og:title"       content="Wilrick den Uil | Full Stack Web Developer" />
+    <meta property="og:description" content="Portfolio van Wilrick den Uil, full stack web developer uit Nederland. Gespecialiseerd in HTML, CSS en Bootstrap." />
+    <meta property="og:image"       content="./images/Wilrick den Uil image.jpg" />
+    <meta property="og:locale"      content="nl_NL" />
+    <meta property="article:published_time" content="2026-05-30T20:49:41+02:00" />
+    <meta property="article:modified_time"  content="2026-05-30T20:49:41+02:00" />
+  
+    <meta name="twitter:card"        content="summary_large_image" />
+    <meta name="twitter:url"         content="https://wilrickdenuil.github.io/Wilrick-s-Portfolio/" />
+    <meta name="twitter:title"       content="Wilrick den Uil | Full Stack Web Developer" />
+    <meta name="twitter:description" content="Portfolio van Wilrick den Uil, full stack web developer uit Nederland. Gespecialiseerd in HTML, CSS en Bootstrap." />
+    <meta name="twitter:image"       content="./images/Wilrick den Uil image.jpg" />
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Syne:wght@400..800&display=swap" rel="stylesheet" />
+  
+    <link rel="stylesheet" href="style.css" />
+  
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Wilrick den Uil",
+      "url": "https://wilrickdenuil.github.io/Wilrick-s-Portfolio/",
+      "jobTitle": "Full Stack Web Developer",
+      "description": "Full stack web developer uit Nederland. Gespecialiseerd in HTML, CSS en Bootstrap.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "NL"
+      },
+      "sameAs": [
+        "https://github.com/wilrickdenuil",
+        "https://linkedin.com/in/wilrickdenuil"
+      ],
+      "knowsAbout": ["HTML", "CSS", "Bootstrap"]
+    }
+    </script>
+  
+  </head>
+
+  <body>
+    <!-- Mobile menu overlay -->
+    <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+
+    <!-- Mobile menu -->
+    <nav class="mobile-nav" id="mobileNav">
+      <button
+        class="mobile-nav-close"
+        id="mobileNavClose"
+        aria-label="Close menu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="currentColor"
+          viewBox="0 0 16 16">
+          <path
+            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+        </svg>
+      </button>
+      <ul class="mobile-nav-list">
+        <li><a href="#about" class="mobile-nav-link">Over mij</a></li>
+        <li><a href="#skills" class="mobile-nav-link">Vaardigheden</a></li>
+        <li><a href="#projects" class="mobile-nav-link">Projecten</a></li>
+        <li><a href="#resume" class="mobile-nav-link">CV</a></li>
+        <li><a href="#contact" class="mobile-nav-btn">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-wrapper">
+      <div class="container nav-container">
+        <nav id="nav">
+          <p class="nav-h3">Wilrick den Uil</p>
+          <ul>
+            <li><a href="#about" class="nav-link">Over mij</a></li>
+            <li><a href="#skills" class="nav-link">Vaardigheden</a></li>
+            <li><a href="#projects" class="nav-link">Projecten</a></li>
+            <li><a href="#resume" class="nav-link">CV</a></li>
+            <li><a href="#contact" class="nav-btn">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Hamburger menu button -->
+    <button class="hamburger-btn" id="hamburgerBtn" aria-label="Menu">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        fill="currentColor"
+        class="bi bi-list"
+        viewBox="0 0 16 16">
+        <path
+          fill-rule="evenodd"
+          d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+      </svg>
+    </button>
+    <section id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <p class="blue-label">— Full Stack Web Developer</p>
+          <p id="hero-title">
+            Building<br />things<br />for the
+            <span class="span-blue">web.</span>
+          </p>
+          <p id="hero-description">
+            Hi, ik ben Wilrick — een gedreven full stack developer met een
+            passie voor clean code, intuïtieve interfaces en schaalbare back-end
+            systemen.
+          </p>
+          <div class="hero-buttons">
+            <a class="btn-primary" href="#projects">Bekijk mijn werk →</a>
+            <a class="btn-secondary" href="#contact">Download CV</a>
+          </div>
+        </div>
+        <div class="hero-tags">
+          <div class="hero-badge">
+            <span></span>
+            <p>HTML</p>
+          </div>
+          <div class="hero-badge">
+            <span></span>
+            <p>CSS</p>
+          </div>
+          <div class="hero-badge">
+            <span></span>
+            <p>Bootstrap</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="container about-container">
+        <div class="about-div-1">
+          <p class="blue-label">Over mij</p>
+          <h2 class="about-title">Hallo, ik ben Wilrick.</h2>
+          <p class="about-description">
+            Ik ben een full stack developer met een achtergrond in informatica.
+            Mijn kracht ligt in het combineren van een sterk technisch fundament
+            met een oog voor design en gebruiksvriendelijkheid. <br /><br />
+            Naast mijn studie werk ik graag aan eigen projecten, open source
+            bijdragen en het verkennen van nieuwe technologieën.
+          </p>
+          <div class="about-tags">
+            <span class="tag-grey">🚵🏼 Mountainbiking</span>
+            <span class="tag-grey">🎹 Muziek</span>
+            <span class="tag-grey">📚 Tech blogs</span>
+            <span class="tag-grey">🚀 Open source</span>
+            <span class="tag-grey">☕ Koffie</span>
+          </div>
+        </div>
+        <div class="about-div-2">
+          <div class="about-image-wrapper">
+            <img
+              src="./images/Wilrick den Uil.jpeg"
+              alt="Foto van Wilrick den Uil" />
+            <p>📍 Nederland</p>
+            <div class="about-tags">
+              <span class="tag-grey">Leergierig</span>
+              <span class="tag-grey">Collegiaal</span>
+              <span class="tag-grey">Remote-friendly</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skills">
+      <div class="container skills-container">
+        <p class="blue-label">Technische vaardigheden</p>
+        <h2 class="about-title">Mijn tech stack</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <p class="blue-label skill">Frontend</p>
+            <h3 class="skill-title">HTML</h3>
+            <div class="skill-bar">
+              <div class="skill-fill" style="width: 90%"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <p class="blue-label skill">Styling</p>
+            <h3 class="skill-title">CSS</h3>
+            <div class="skill-bar">
+              <div class="skill-fill" style="width: 85%"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <p class="blue-label skill">Frontend</p>
+            <h3 class="skill-title">Bootstrap</h3>
+            <div class="skill-bar">
+              <div class="skill-fill" style="width: 75%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <div class="container projects-container">
+        <p class="blue-label">Mijn werk</p>
+        <h2 class="about-title">Featured Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <img
+              src="./images/projects/Project 1.png"
+              alt="Project 1"
+              class="project-image" />
+            <div class="project-card-content">
+              <div class="project-tags">
+                <span class="tag-blue">HTML</span>
+              </div>
+              <h3 class="project-title">Project 1</h3>
+              <p class="project-description">
+                Het eerste project dat ik heb gemaakt. Dit project bevat een
+                eenvoudige HTML pagina, zonder enige styling.
+              </p>
+              <a
+                href="./projects/project 1/index.html"
+                class="blue-label project-link"
+                >Bekijk project →</a
+              >
+            </div>
+          </div>
+          <div class="project-card">
+            <img
+              src="./images/projects/Project 2.png"
+              alt="Project 2"
+              class="project-image" />
+            <div class="project-card-content">
+              <div class="project-tags">
+                <span class="tag-blue">HTML</span>
+                <span class="tag-blue">CSS</span>
+              </div>
+              <h3 class="project-title">Project 2</h3>
+              <p class="project-description">
+                Het volgende project dat ik heb gebouwt betreft een eenvoudige
+                webpagina, waarin ik voor het eerst CSS heb gebruikt voor
+                styling. Ik ook is dit het eerste project dat responsive is.
+              </p>
+              <a
+                href="./projects/project 2/index.html"
+                class="blue-label project-link"
+                >Bekijk project →</a
+              >
+            </div>
+          </div>
+          <div class="project-card">
+            <img
+              src="./images/projects/Project 3.png"
+              alt="Project 3"
+              class="project-image" />
+            <div class="project-card-content">
+              <div class="project-tags">
+                <span class="tag-blue">HTML</span>
+                <span class="tag-blue">CSS</span>
+                <span class="tag-blue">Bootstrap</span>
+              </div>
+              <h3 class="project-title">Project 3</h3>
+              <p class="project-description">
+                Na het leren van HTML en CSS heb ik voor het eerst kennis
+                gemaakt met Bootstrap. Bootstrap is een populaire front-end
+                framework dat helpt bij het snel bouwen van responsieve
+                websites.
+              </p>
+              <a
+                href="./projects/project 3/index.html"
+                class="blue-label project-link"
+                >Bekijk project →</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="resume">
+      <div class="container resume-container">
+        <div class="resume-div-1">
+          <div class="resume-headers">
+            <div class="resume-header">
+              <p class="blue-label">Opleiding</p>
+              <h2>Education</h2>
+            </div>
+          </div>
+          <div class="resume-grid">
+            <div class="resume-timeline-item">
+              <p class="resume-timeline-period">2026 — heden</p>
+              <h3 class="resume-timeline-role">
+                Udemy — Full stack web developer
+              </h3>
+              <p class="resume-timeline-company blue-label">Remote studie</p>
+              <p class="resume-timeline-desc">
+                Full stack webdevelopment, webdesign,databases, software
+                architectuur en agile werken.
+              </p>
+            </div>
+
+            <div class="resume-timeline-item">
+              <p class="resume-timeline-period">2021 — 2024</p>
+              <h3 class="resume-timeline-role">MBO — Junior accountmanager</h3>
+              <p class="resume-timeline-company blue-label">
+                Hoornbeeck college
+              </p>
+              <p class="resume-timeline-desc">
+                Diploma behaald tot junior accountmanager, gefocussed op B2B
+                verkoop.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="resume-div-2">
+          <div class="resume-headers">
+            <div class="resume-header">
+              <p class="blue-label">Werkervaring</p>
+              <h2>Experience</h2>
+            </div>
+          </div>
+          <div class="resume-grid">
+            <div class="resume-timeline-item">
+              <p class="resume-timeline-period">2022 — heden</p>
+              <h3 class="resume-timeline-role">E-commerce specialist</h3>
+              <p class="resume-timeline-company blue-label">Verdouw</p>
+              <p class="resume-timeline-desc">
+                Het beheren van de e-commerce websites, het optimaliseren van de
+                websites en het uitvoeren van marketingcampagnes.
+              </p>
+            </div>
+
+            <div class="resume-timeline-item">
+              <p class="resume-timeline-period">2019 — 2023</p>
+              <h3 class="resume-timeline-role">Vers medewerker</h3>
+              <p class="resume-timeline-company blue-label">
+                Van der Spek verswinkel
+              </p>
+              <p class="resume-timeline-desc">
+                Het vullen van de winkel, kassa bedienen en het aansturen van
+                collega's in het magazijn.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container contact-container">
+        <div class="contact-left">
+          <p class="blue-label">Neem contact op</p>
+          <h2 class="contact-title">Laten we<br /><span>praten.</span></h2>
+          <p class="contact-sub">
+            Heb je een project, stage of vacature? Stuur me een berichtje en ik
+            reageer zo snel mogelijk.
+          </p>
+          <div class="contact-links">
+            <a
+              href="https://github.com/wilrickdenuil"
+              target="_blank"
+              class="contact-link">
+              <div class="contact-link-icon">GH</div>
+              <div>
+                <p class="contact-link-title">GitHub</p>
+                <p class="contact-link-sub">github.com/wilrickdenuil</p>
+              </div>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/wilrick-den-uil/"
+              target="_blank"
+              class="contact-link">
+              <div class="contact-link-icon">in</div>
+              <div>
+                <p class="contact-link-title">LinkedIn</p>
+                <p class="contact-link-sub">linkedin.com/in/wilrickdenuil</p>
+              </div>
+            </a>
+            <a id="mail" class="contact-link">
+              <div class="contact-link-icon">✉</div>
+              <div>
+                <p class="contact-link-title">Email</p>
+                <p class="contact-link-sub">d2lscmlja2RlbnVpbEBnbWFpbC5jb20=</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-right">
+          <div class="contact-form">
+            <h3 class="contact-form-title">Neem <span>contact</span> op</h3>
+            <input
+              id="contact-subject"
+              class="contact-input"
+              type="text"
+              placeholder="Onderwerp" />
+            <textarea
+              id="contact-message"
+              class="contact-input contact-textarea"
+              placeholder="Jouw bericht..."></textarea>
+            <button id="contact-submit" class="contact-submit" type="button">
+              Stuur bericht →
+            </button>
+            <div
+              id="contact-feedback"
+              aria-live="polite"
+              style="
+                display: none;
+                margin-top: 8px;
+                font-size: 0.95rem;
+                color: var(--muted-color, #666);
+              "></div>
+            <div
+              id="contact-fallback"
+              style="display: none; margin-top: 6px; font-size: 0.95rem">
+              <a
+                id="contact-fallback-link"
+                style="
+                  color: var(--link-color, #0366d6);
+                  text-decoration: underline;
+                  cursor: pointer;
+                  display: inline-block;
+                "></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="container footer-container">
+        <p class="footer-copy">© 2026 Wilrick den Uil</p>
+        <div class="footer-links">
+          <a
+            href="https://github.com/wilrickdenuil"
+            target="_blank"
+            class="footer-link"
+            >GitHub</a
+          >
+          <a
+            href="https://www.linkedin.com/in/wilrick-den-uil/"
+            target="_blank"
+            class="footer-link"
+            >LinkedIn</a
+          >
+          <a href="#nav" class="footer-link">↑ Naar boven</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
