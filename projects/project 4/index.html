@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project | Koffie bestellen</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Koffie bestellen</h1>
+      </div>
+    </header>
+
+    <main class="koffie-order">
+      <div class="container">
+        <div class="grid-layout">
+          <form class="order-form">
+            <fieldset>
+              <legend>Warme Koffie</legend>
+
+              <div class="radio-group">
+                <input
+                  type="radio"
+                  id="espresso"
+                  name="hot-coffee"
+                  value="espresso" />
+                <label for="espresso">Espresso</label>
+              </div>
+
+              <div class="radio-group">
+                <input
+                  type="radio"
+                  id="americano"
+                  name="hot-coffee"
+                  value="americano" />
+                <label for="americano">Americano</label>
+              </div>
+
+              <div class="radio-group">
+                <input
+                  type="radio"
+                  id="koffie"
+                  name="hot-coffee"
+                  value="koffie" />
+                <label for="koffie">Koffie</label>
+              </div>
+
+              <div class="radio-group">
+                <input
+                  type="radio"
+                  id="cappuccino"
+                  name="hot-coffee"
+                  value="cappuccino" />
+                <label for="cappuccino">Cappuccino</label>
+              </div>
+
+              <div class="radio-group">
+                <input
+                  type="radio"
+                  id="latte"
+                  name="hot-coffee"
+                  value="latte" />
+                <label for="latte">Latte</label>
+              </div>
+
+              <div class="radio-group">
+                <input
+                  type="radio"
+                  id="flat-white"
+                  name="hot-coffee"
+                  value="flat-white" />
+                <label for="flat-white">Flat White</label>
+              </div>
+
+              <div class="radio-group">
+                <input
+                  type="radio"
+                  id="latte-macchiato"
+                  name="hot-coffee"
+                  value="latte-macchiato" />
+                <label for="latte-macchiato">Latte Macchiato</label>
+              </div>
+
+              <div class="radio-group">
+                <input
+                  type="radio"
+                  id="mocha"
+                  name="hot-coffee"
+                  value="mocha" />
+                <label for="mocha">Mocha</label>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Grootte</legend>
+
+              <div class="radio-group">
+                <input type="radio" id="small" name="size" value="small" />
+                <label for="small">Small</label>
+              </div>
+
+              <div class="radio-group">
+                <input type="radio" id="medium" name="size" value="medium" />
+                <label for="medium">Medium</label>
+              </div>
+
+              <div class="radio-group">
+                <input type="radio" id="large" name="size" value="large" />
+                <label for="large">Large</label>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Extra's</legend>
+
+              <div class="checkbox-group">
+                <input
+                  type="checkbox"
+                  id="extra-shot"
+                  name="extras"
+                  value="extra-shot" />
+                <label for="extra-shot">Extra Shot</label>
+              </div>
+
+              <div class="checkbox-group">
+                <input
+                  type="checkbox"
+                  id="haver-melk"
+                  name="extras"
+                  value="haver-melk" />
+                <label for="haver-melk">Haver Milk</label>
+              </div>
+
+              <div class="checkbox-group">
+                <input
+                  type="checkbox"
+                  id="smaak-shot"
+                  name="extras"
+                  value="smaak-shot" />
+                <label for="smaak-shot">Smaak Shot</label>
+              </div>
+
+              <div class="checkbox-group">
+                <input
+                  type="checkbox"
+                  id="slagroom"
+                  name="extras"
+                  value="slagroom" />
+                <label for="slagroom">Slagroom</label>
+              </div>
+
+              <div class="checkbox-group">
+                <input
+                  type="checkbox"
+                  id="sauzen"
+                  name="extras"
+                  value="sauzen" />
+                <label for="sauzen">Sauzen</label>
+              </div>
+            </fieldset>
+          </form>
+
+          <aside class="preview">
+            <div class="preview-koffie">
+              <div class="koffie-cup-wrapper">
+                <div class="koffie-beker">
+                  <div class="koffie-vulling"></div>
+                  <div class="koffie-schuim"></div>
+                </div>
+                <div class="koffie-beker-oor"></div>
+                <div class="koffie-schaal"></div>
+              </div>
+            </div>
+
+            <div class="preview-summary">
+              <h2 class="summary-title">Bestelling</h2>
+              <div id="order-items"></div>
+              <hr />
+              <div id="order-summary">
+                <div class="item-row" id="order-subtotal">
+                  <h4 class="summary-label">Subtotaal:</h4>
+                  <span class="subtotal">€0.00</span>
+                </div>
+                <div class="item-row" id="order-tax">
+                  <h4 class="summary-label">Btw (9%):</h4>
+                  <span class="tax">€0.00</span>
+                </div>
+              </div>
+              <hr />
+              <div class="item-row" id="order-total">
+                <h3 class="summary-label">Totaal:</h3>
+                <span class="total">€0.00</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2026 Project Koffie Bestellen. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

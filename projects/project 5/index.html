@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="background"></div>
+
+<header class="hero container">
+    <h1>Notes Dashboard</h1>
+    <p>Capture your ideas before they disappear.</p>
+</header>
+
+<main class="app container">
+
+    <section class="card">
+
+        <div class="input-group">
+
+            <input
+                type="text"
+                id="noteInput"
+                placeholder="Write your next idea..."
+            >
+
+            <button id="addButton" disabled="true">
+                Add
+            </button>
+
+        </div>
+
+        <div id="notes"></div>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>© Wilrick den Uil | Voor het opslaan van notities wordt de localstorage in de browser gebruikt.</p>
+</footer>   
+
+<script src="script.js"></script>
+
+</body>
+</html>
